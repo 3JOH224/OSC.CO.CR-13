@@ -191,10 +191,12 @@ body {
 	@media @mobile {
 		padding: 63px 32px;
 		height: 80%;
+		background: red !important;
 	}
 	@media @tablet {
 		padding: 50px 262px 12px 32px;
 		font-size: 0.7em;
+		background: green !important;
 	}
 
 	padding-left: 10%;
@@ -223,50 +225,46 @@ body {
 
 #page_contact h2 {
 	position: absolute;
-	top: 12%;
-	left: 27%;
+	top: 1em;
+	left: 13em;
 	font-size: 2em;
-	width: 900px;
-	text-align: right;
-	@media @tablet {top: 30px;left: 10px;font-size: 1.32em;width: 666px;}
+	@media @tablet {top: 3em;left: 2em;font-size: 1.32em;width: 92%;z-index: 1;text-shadow: 1px 1px 0px #fff;}
 	@media @mobile {position: static;width: 100%;text-align: left;}
 }
 #vcard {
 	display: inline-block;
 	font-size: 1.12em;
 	position: absolute;
-	right: 24%;
-	top: 28%;
-	@media @tablet {font-size: 1em;right: 96px;top: 122px;}
+	right: 26em;
+	top: 16em;
+	@media @tablet {font-size: 1em;right: 6em;top: 9em;}
 	@media @mobile {position: static;width: 260px;margin: 0 auto;display: block;}
 }
 #oLoc {
 	position: absolute;
-	top: 20%;
-	left: 16%;
 	-webkit-mask: url('/img/frog.svg') center center / cover;
 	mask-size: 100% 100%;
 	mask-repeat: no-repeat;
-	width: 1042px;
-	top: 20%;
-	left: 16%;
+	height: 69vh;
+	bottom: 2em;
+	left: -23em;
 	pointer-events: none;
-	@media @tablet {width: 616px;top: 79px;left: -88px;}
+	@media @tablet {width: 569px;bottom: 1em;left: -6em;}
 	@media @mobile {display: none;}
 }
 .contactP {
 	position: absolute;
-	bottom: 18%;
-	right: 32%;
-	@media @tablet {font-size: 1em !important;line-height: 1.2 !important;bottom: 9px;right: 93px;}
+	bottom: 6em;
+	right: 22em;
+	@media @tablet {font-size: 1em !important;line-height: 1.2 !important;bottom: 0em;right: 2em;}
 	@media @mobile {position: static;margin-top: 2em !important;font-size: 1.2em !important;line-height: 1.3em !important;}
 }
 .contactD {
 	position: absolute;
-	bottom: 33%;
-	right: 18%;
-	width: 333px;
-	@media @tablet {margin: 0 !important;padding: 0 !important;font-size: 0.81em !important;line-height: 1.2 !important;top: 0px;width: 666px;left: 63px;}
+	bottom: 13em;
+	right: 15em;
+	width: 600px;
+	@media @tablet {margin: 0 !important;padding: 0 !important;font-size: 0.81em !important;line-height: 1.2 !important;top: 0em;width: auto;left: 3em;}
 	@media @mobile {position: static;}
 }
 
