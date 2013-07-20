@@ -11,7 +11,7 @@ var Boxlayout = (function() {
 			'transition' : 'transitionend'
 		},
 		// transition end event name
-		transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
+		transEndEventName = transEndEventNames[ 'transition' ],
 		// support css transitions
 		supportTransitions = Modernizr.csstransitions;
 
@@ -63,4 +63,9 @@ var Boxlayout = (function() {
 // On Start
 $(function() {
 	Boxlayout.init();
+});
+
+$(window).load(function () {
+  // hide loader
+  $('#loader').hide();
 });
